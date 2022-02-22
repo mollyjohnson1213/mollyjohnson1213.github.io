@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Molly's Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="projects.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <header>
+      <div class="topnav" id="mytopnav">
+        <nav>
+          <a href="index.html">
+            <font color="#eb4b6a"><b>MOLLY AMANDA</b></font></a
+          >
+          <div class="right">
+            <a href="index.html">ABOUT</a>
+            <a href="projects.html" class="active">PROJECTS</a>
+            <a href="#resume.pdf">RESUME</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </head>
+
+  <body>
+    <br />
+    <div class="banner">
+      <h1>Projects</h1>
+    </div>
+
+    <ul class="cards">
+      <li class="cards__item">
+        <div class="card">
+          <div class="card__image card__image--fence"></div>
+          <div class="card__content">
+            <div class="card__title">Flex</div>
+            <p class="card__text">
+              This is the shorthand for flex-grow, flex-shrink and flex-basis
+              combined. The second and third parameters (flex-shrink and
+              flex-basis) are optional. Default is 0 1 auto.
+            </p>
+            <button class="btn btn--block card__btn">Button</button>
+          </div>
+        </div>
+      </li>
+      <li class="cards__item">
+        <div class="card">
+          <div class="card__image card__image--river"></div>
+          <div class="card__content">
+            <div class="card__title">Flex Grow</div>
+            <p class="card__text">
+              This defines the ability for a flex item to grow if necessary. It
+              accepts a unitless value that serves as a proportion. It dictates
+              what amount of the available space inside the flex container the
+              item should take up.
+            </p>
+            <button class="btn btn--block card__btn">Button</button>
+          </div>
+        </div>
+      </li>
+      <li class="cards__item">
+        <div class="card">
+          <div class="card__image card__image--record"></div>
+          <div class="card__content">
+            <div class="card__title">Flex Shrink</div>
+            <p class="card__text">
+              This defines the ability for a flex item to shrink if necessary.
+              Negative numbers are invalid.
+            </p>
+            <button class="btn btn--block card__btn">Button</button>
+          </div>
+        </div>
+      </li>
+      <li class="cards__item">
+        <div class="card">
+          <div class="card__image card__image--flowers"></div>
+          <div class="card__content">
+            <div class="card__title">Flex Basis</div>
+            <p class="card__text">
+              This defines the default size of an element before the remaining
+              space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or
+              a keyword. The auto keyword means "look at my width or height
+              property."
+            </p>
+            <button class="btn btn--block card__btn">Button</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>

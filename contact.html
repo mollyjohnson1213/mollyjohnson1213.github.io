@@ -12,6 +12,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="form.php" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -26,10 +28,10 @@
             <font color="#eb4b6a"><b>MOLLY AMANDA</b></font></a
           >
           <div class="right">
-            <a href="index.html" class="active">ABOUT</a>
+            <a href="index.html">ABOUT</a>
             <a href="project.html">PROJECTS</a>
             <a href="resume.pdf">RESUME</a>
-            <a href="contact.html">CONTACT</a>
+            <a href="contact.html" class="active">CONTACT</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
             </a>
@@ -42,40 +44,29 @@
   <body>
     <br />
     <div class="banner">
-      <h1>User Experience Designer.</h1>
-
-      <h3 style="font-weight: 100">
-        The root of a great user experience is <i>listening</i> to the user.
-      </h3>
+      <h1>Get in Contact with me!</h1>
     </div>
 
-    <div class="wrapper">
-      <br />
-      <aside class="aside aside-1">
-        <img src="mollyamanda.jpeg" height="300" />
-      </aside>
-
-      <aside class="aside aside-2">
-        <h1 style="font-weight: 400">About Me</h1>
-        <p style="font-weight: 100; color: #696969; line-height: 2">
-          Hello! I’m Molly Johnson, a user experience designer focused in UI/UX
-          design, prototyping and front-end development. I have worked on
-          various applications throughout my career. I mainly focus on building
-          successful digital products for the web and mobile.
-        </p>
-
-        <p style="font-weight: 100; color: #696969; line-height: 2">
-          Get in touch and let’s discuss how I can help with your next project.
-        </p>
-
-        <p style="font-weight: 100; color: #696969; line-height: 2">
-          <! ––  <img src="LinkedInImg.png" height="40" />
-          Check out my
-          <a href="https://www.linkedin.com/in/majjohnson/">LinkedIn </a>
-          profile!
-        </p>
-      </aside>
-    </div>
+    <h3>Contact Me</h3>
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+            <label for="Name" class="fcf-label">Name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+        </div>
 
     <script>
       function myFunction() {

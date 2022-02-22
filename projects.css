@@ -1,0 +1,91 @@
+/* Reset */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Typography */
+
+
+
+
+.main {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.card-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5em 0;
+  background-color: white;
+}
+
+.city {
+  width: 90%;
+  margin: 0.5em auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid gainsboro;
+  box-shadow: 0 3px 10px rgba(214, 214, 214, 0.2);
+}
+
+.city-image,
+.description {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.city-image {
+  padding: 1.2em 1em;
+} 
+
+.description {
+  padding: 1em 2em;
+}
+
+.city-image img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: rgb(88, 88, 88);
+  text-decoration: none;
+}
+
+.description h2 {
+  padding-bottom: 0.5em;
+}
+
+/* FLEXBOX STYLES */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+
+@media (min-width: 640px) { 
+
+.card-container {
+      display: flex;
+      flex-flow: wrap;
+  }
+
+.city {
+  flex: 1 0 48%;
+  margin: 1%;
+}
+
+@media (min-width: 1001px) {
+  .city {
+      flex: 1 0 31%;
+  }
+
+  .city:last-of-type {
+      flex-grow: 0;
+  }
+}
